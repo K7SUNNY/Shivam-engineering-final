@@ -1,0 +1,20 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /
+
+# Remove .html extension
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.html -f
+RewriteRule ^([^/]+)$ $1.html [L]
+
+# Redirect .html to extensionless URL
+RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# Redirect index.html to root
+RewriteCond %{THE_REQUEST} \s/+(index\.html?) [NC]
+RewriteRule ^index\.html?$ / [R=301,L]
+
+# Force HTTPS (optional)
+RewriteCond %{HTTPS} !=on
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
