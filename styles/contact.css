@@ -1,0 +1,248 @@
+/* contact.css – Label on input border when focused, select stays normal */
+
+/* Base Reset */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* Section */
+.contact-section {
+    padding: 8rem 0 5rem;
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+/* Header */
+.section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.section-header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.section-header p {
+    font-size: 1.25rem;
+    color: var(--muted-foreground);
+}
+
+/* Flex Container */
+.contact-container {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+/* Contact Form Card */
+.card-corporate {
+    flex: 1;
+    min-width: 300px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    max-width: 800px;
+    padding: 2rem;
+    background: var(--background);
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out 0.2s forwards;
+}
+
+.card-corporate:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 24px rgba(0,0,0,.1);
+}
+
+.form-title {
+    font-size: 30px;
+    margin: 0 0 0.5rem;
+}
+.form-subtitle {
+    font-size: 1.25rem;
+    color: var(--muted-foreground);
+    margin-bottom: 1.5rem;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+.message-group {
+    margin-bottom: 2rem;
+}
+
+/* Input & Textarea – Label on border when active */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 1.25rem 0.75rem 0.5rem;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    background: var(--background);
+    font: inherit;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.2);
+}
+
+/* Label – starts inside, moves to border */
+.form-group label {
+    position: absolute;
+    left: 0.75rem;
+    top: 1rem;
+    font-weight: 500;
+    color: var(--muted-foreground);
+    pointer-events: none;
+    transition: all 0.2s ease;
+    transform-origin: 0 50%;
+}
+
+/* When focused or filled → label sits ON the border */
+.form-group input:focus + label,
+.form-group input:not(:placeholder-shown) + label,
+.form-group textarea:focus + label,
+.form-group textarea:not(:placeholder-shown) + label {
+    top: -0.5rem;
+    left: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--primary);
+    background: var(--background);
+    padding: 0 0.35rem;
+}
+
+/* SELECT – Normal label, no floating */
+.form-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    background: var(--background);
+    font: inherit;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 16px;
+}
+
+.form-group select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(var(--primary-rgb), 0.2);
+}
+
+.form-group select + label {
+    position: static;
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    color: var(--foreground);
+}
+
+/* Textarea */
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Submit Button */
+.card-corporate button {
+    width: 100%;
+    border: none;
+    padding: 0.9rem 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.card-corporate button:active {
+    transform: translateY(2px);
+}
+
+/* Head Office */
+.head-office {
+    flex: 1;
+    min-width: 300px;
+    padding: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.6s ease-out 0.4s forwards;
+}
+
+.head-office h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.office-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.office-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: fadeInUp 0.5s ease-out forwards;
+}
+
+.office-item:nth-child(1) { animation-delay: 0.5s; }
+.office-item:nth-child(2) { animation-delay: 0.6s; }
+.office-item:nth-child(3) { animation-delay: 0.7s; }
+.office-item:nth-child(4) { animation-delay: 0.8s; }
+
+.office-item svg {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease, stroke 0.3s ease;
+}
+
+.office-item:hover svg {
+    transform: scale(1.2);
+    stroke: var(--primary);
+}
+
+.office-item h4 {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+.office-item p {
+    color: var(--muted-foreground);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column !important;
+    }
+    .card-corporate,
+    .head-office {
+        animation-delay: 0s !important;
+    }
+}

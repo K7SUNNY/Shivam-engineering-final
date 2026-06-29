@@ -1,0 +1,294 @@
+/* About Page Specific Styles */
+
+.about-hero {
+    padding: 8rem 0 5rem;
+    background: linear-gradient(135deg, hsla(217, 91%, 60%, 0.05), hsla(215, 16%, 47%, 0.05));
+}
+
+.about-hero-content {
+    text-align: center;
+    max-width: 48rem;
+    margin: 0 auto;
+}
+
+.about-hero h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.about-hero p {
+    font-size: 1.25rem;
+    color: var(--muted-foreground);
+    line-height: 1.6;
+}
+
+/* Company Story */
+.company-story {
+    padding: 5rem 0;
+}
+
+.story-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.story-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.story-content p {
+    font-size: 1.125rem;
+    color: var(--muted-foreground);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.story-content strong {
+    color: var(--foreground);
+    font-weight: 600;
+}
+
+.story-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+    box-shadow: var(--shadow-elegant);
+}
+
+/* Leadership Team */
+.leadership-team {
+    padding: 5rem 0;
+    background: var(--muted);
+}
+
+.leadership-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.leader-card {
+    padding: 2rem;
+    text-align: center;
+}
+
+.leader-avatar {
+    width: 10rem;
+    height: 10rem;
+    background: hsla(217, 91%, 60%, 0.2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    overflow: hidden; /* Ensures the image stays within the circular boundary */
+}
+
+.leader-avatar.secondary {
+    background: hsla(215, 16%, 47%, 0.2);
+}
+
+.leader-avatar.accent {
+    background: hsla(43, 74%, 66%, 0.2);
+}
+
+.leader-avatar img {
+    width: 100%; /* Matches parent's width */
+    height: 100%; /* Matches parent's height */
+    object-fit: cover; /* Ensures the image fills the space while maintaining aspect ratio */
+    border-radius: 50%; /* Keeps the image circular */
+    color: var(--primary);
+}
+.leader-avatar.secondary svg {
+    color: var(--secondary);
+}
+
+.leader-avatar.accent svg {
+    color: var(--accent-foreground);
+}
+
+.leader-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.leader-role {
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.leader-role.secondary {
+    color: var(--secondary);
+}
+
+.leader-role.accent {
+    color: var(--accent-foreground);
+}
+
+.leader-description {
+    color: var(--muted-foreground);
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.leader-achievements {
+    
+    font-size: 0.875rem;
+    color: var(--muted-foreground);
+    text-align: left;
+    max-width: 18rem;
+    margin: 0 auto;
+}
+
+.leader-achievements li {
+    margin-bottom: 0.25rem;
+}
+
+/* Mission & Vision */
+.mission-vision {
+    padding: 5rem 0;
+}
+
+.mission-vision-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 3rem;
+}
+
+.mission-header,
+.vision-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.mission-icon,
+.vision-icon {
+    width: 3rem;
+    height: 3rem;
+    color: var(--primary);
+    margin-right: 1rem;
+}
+
+.vision-icon {
+    color: var(--secondary);
+}
+
+.mission h2,
+.vision h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.mission p,
+.vision p {
+    font-size: 1.125rem;
+    color: var(--muted-foreground);
+    line-height: 1.6;
+}
+
+/* Core Values */
+.core-values {
+    padding: 5rem 0;
+    background: var(--muted);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+.value-card {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.value-icon {
+    width: 4rem;
+    height: 4rem;
+    background: hsla(217, 91%, 60%, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+}
+
+.value-icon.secondary {
+    background: hsla(215, 16%, 47%, 0.1);
+}
+
+.value-icon.accent {
+    background: hsla(43, 74%, 66%, 0.1);
+}
+
+.value-icon svg {
+    width: 2rem;
+    height: 2rem;
+    color: var(--primary);
+}
+
+.value-icon.secondary svg {
+    color: var(--secondary);
+}
+
+.value-icon.accent svg {
+    color: var(--accent-foreground);
+}
+
+.value-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.value-card p {
+    color: var(--muted-foreground);
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .about-hero h1 {
+        font-size: 3.5rem;
+    }
+    
+    .story-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .leadership-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .about-hero h1 {
+        font-size: 4rem;
+    }
+    
+    .leadership-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .mission-vision-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .values-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
