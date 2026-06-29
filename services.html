@@ -5,19 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Services - Shivam Engineering | Pipeline Design & Infrastructure</title>
     <meta name="description" content="Comprehensive pipeline engineering services including design, construction, project management, and quality assurance by Shivam Engineering.">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <link rel="canonical" href="https://shivamengineering.in/services.html">
+    <link rel="manifest" href="site.webmanifest">
+    
+    <!-- Google Search Console Verification -->
+    <meta name="google-site-verification" content="2Okv6_-QOoLBmYKsQnYpMCHjr0UX3l4O5zrlwapmDfk" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://shivamengineering.in/services.html">
+    <meta property="og:title" content="Our Services - Shivam Engineering | Pipeline Design & Infrastructure">
+    <meta property="og:description" content="Comprehensive pipeline engineering services including design, construction, project management, and quality assurance by Shivam Engineering.">
+    <meta property="og:image" content="https://shivamengineering.in/assets/hero-pipeline.jpg">
+    <meta property="og:site_name" content="Shivam Engineering">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://shivamengineering.in/services.html">
+    <meta property="twitter:title" content="Our Services - Shivam Engineering | Pipeline Design & Infrastructure">
+    <meta property="twitter:description" content="Comprehensive pipeline engineering services including design, construction, project management, and quality assurance by Shivam Engineering.">
+    <meta property="twitter:image" content="https://shivamengineering.in/assets/hero-pipeline.jpg">
+
+    <!-- JSON-LD Structured Data for Breadcrumbs -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://shivamengineering.in/index.html"
+      },{
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Services",
+        "item": "https://shivamengineering.in/services.html"
+      }]
+    }
+    </script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/variables.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/services.css">
     <link rel="icon" href="/favicon.ico">
 </head>
 <body>
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link" style="position: absolute; top: -100px; left: 0; background: var(--primary); color: var(--secondary); padding: 10px; z-index: 9999; font-weight: 700; transition: top 0.2s;" onfocus="this.style.top='0'" onblur="this.style.top='-100px'">Skip to main content</a>
+
     <!-- Navigation -->
-    <nav class="navigation">
+    <nav class="navigation" aria-label="Main Navigation">
         <div class="container">
             <div class="nav-content">
                 <!-- Logo -->
-                <a href="index.html" class="logo">
-                    <div class="logo-icon">
+                <a href="index.html" class="logo" aria-label="Shivam Engineering Home">
+                    <div class="logo-icon" aria-hidden="true">
                         <span>SE</span>
                     </div>
                     <div class="logo-text">
@@ -26,28 +73,28 @@
                     </div>
                 </a>
 
-                <!-- Desktop Navigation -->
+                <!-- Desktop Links -->
                 <div class="nav-links">
                     <a href="index.html" class="nav-link">Home</a>
                     <a href="about.html" class="nav-link">About</a>
-                    <a href="services.html" class="nav-link active">Services</a>
+                    <a href="services.html" class="nav-link active" aria-current="page">Services</a>
                     <a href="projects.html" class="nav-link">Projects</a>
                     <a href="contact.html" class="nav-link">Contact</a>
                 </div>
 
-                <!-- Contact Info -->
-                <div class="nav-contact">
-                    <div class="phone-info">
-                        <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                <!-- Contact & CTA -->
+                <div class="nav-contact-wrapper">
+                    <a href="tel:+919568483922" class="phone-info" aria-label="Call us at +91 95684 83922">
+                        <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72( 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                         </svg>
                         <span>+91 9568483922</span>
-                    </div>
+                    </a>
                     <a href="contact.html" class="btn-outline">Get Quote</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle Mobile Menu">
                     <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <line x1="3" y1="6" x2="21" y2="6"/>
                         <line x1="3" y1="12" x2="21" y2="12"/>
@@ -60,47 +107,48 @@
                 </button>
             </div>
 
-            <!-- Mobile Menu -->
-            <div class="mobile-menu hidden" id="mobileMenu">
+            <!-- Mobile Drawer Menu -->
+            <div class="mobile-menu hidden" id="mobileMenu" role="region" aria-label="Mobile Navigation Drawer">
                 <div class="mobile-menu-content">
                     <a href="index.html" class="mobile-nav-link">Home</a>
                     <a href="about.html" class="mobile-nav-link">About</a>
                     <a href="services.html" class="mobile-nav-link active">Services</a>
                     <a href="projects.html" class="mobile-nav-link">Projects</a>
                     <a href="contact.html" class="mobile-nav-link">Contact</a>
-                    <div class="mobile-phone-info">
-                        <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <a href="tel:+919568483922" class="mobile-phone-info">
+                        <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                         </svg>
-                        <span>+91 98765 43210</span>
-                    </div>
+                        <span>+91 9568483922</span>
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <main>
+    <!-- Main Content -->
+    <main id="main-content">
         <!-- Hero Section -->
         <section class="services-hero">
             <div class="container">
                 <div class="services-hero-content animate-fadeIn">
-                    <h1>Our Services</h1>
+                    <h1>Our Engineering Services</h1>
                     <p>
-                        Comprehensive pipeline solutions from concept to completion. We deliver 
-                        world-class engineering services that meet the highest industry standards.
+                        Comprehensive pipeline engineering solutions from concept planning to final operations. We deliver 
+                        safety-focused engineering services that comply with international standards.
                     </p>
                 </div>
             </div>
         </section>
 
-        <!-- Main Services -->
+        <!-- Main Services Grid -->
         <section class="main-services">
             <div class="container">
                 <div class="services-grid">
-                    <!-- Pipeline Design -->
+                    <!-- Service 1: Pipeline Design -->
                     <div class="service-detail-card card-corporate animate-scaleIn">
                         <div class="service-header">
-                            <div class="service-icon">
+                            <div class="service-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
                                 </svg>
@@ -108,26 +156,25 @@
                             <h3>Pipeline Design & Engineering</h3>
                         </div>
                         <p class="service-summary">
-                            Advanced pipeline design solutions for oil, gas, water, and industrial applications 
-                            using cutting-edge technology and industry best practices.
+                            Advanced pipeline design solutions for natural gas, oil, utility water, and industrial applications 
+                            using state-of-the-art stress simulations and surveying tools.
                         </p>
-                        <ul class="service-features">
-                            <li>• 3D Pipeline Modeling & Design</li>
-                            <li>• Hydraulic Analysis & Optimization</li>
-                            <li>• Material Selection & Specification</li>
-                            <li>• Route Planning & Surveying</li>
-                            <li>• Stress Analysis & Safety Assessment</li>
-                            <li>• Regulatory Compliance & Permitting</li>
+                        <ul class="service-features" aria-label="Pipeline Design Features">
+                            <li>3D Pipeline Stress Modeling</li>
+                            <li>Hydraulic Flow Optimization</li>
+                            <li>Material Selection Specs</li>
+                            <li>Trench Route Surveying & Mapping</li>
+                            <li>Regulatory Design Clearances</li>
                         </ul>
                         <div class="service-cta">
                             <a href="contact.html" class="btn-outline">Request Quote</a>
                         </div>
                     </div>
 
-                    <!-- Construction Management -->
+                    <!-- Service 2: Construction Management -->
                     <div class="service-detail-card card-corporate animate-scaleIn">
                         <div class="service-header">
-                            <div class="service-icon">
+                            <div class="service-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
                                     <line x1="8" y1="21" x2="16" y2="21"/>
@@ -137,26 +184,25 @@
                             <h3>Construction & Installation</h3>
                         </div>
                         <p class="service-summary">
-                            Complete pipeline construction services from ground preparation to final 
-                            commissioning, ensuring quality delivery on time and within budget.
+                            Full-scale pipeline installation and utility network construction, utilizing trenchless technology 
+                            and automated welding mechanisms for seamless delivery.
                         </p>
-                        <ul class="service-features">
-                            <li>• Pipeline Installation & Welding</li>
-                            <li>• Trenching & Excavation Services</li>
-                            <li>• Horizontal Directional Drilling</li>
-                            <li>• Pipeline Testing & Commissioning</li>
-                            <li>• Environmental Restoration</li>
-                            <li>• Safety Management Systems</li>
+                        <ul class="service-features" aria-label="Construction Features">
+                            <li>High-pressure Steel & HDPE Jointing</li>
+                            <li>Trenching & Ground Preparation</li>
+                            <li>Horizontal Directional Drilling (HDD)</li>
+                            <li>Hydro-testing & Commissioning</li>
+                            <li>Environmental Site Restoration</li>
                         </ul>
                         <div class="service-cta">
                             <a href="contact.html" class="btn-outline">Request Quote</a>
                         </div>
                     </div>
 
-                    <!-- Project Management -->
+                    <!-- Service 3: Project Management -->
                     <div class="service-detail-card card-corporate animate-scaleIn">
                         <div class="service-header">
-                            <div class="service-icon">
+                            <div class="service-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
                                     <circle cx="9" cy="7" r="4"/>
@@ -167,26 +213,25 @@
                             <h3>Project Management</h3>
                         </div>
                         <p class="service-summary">
-                            Comprehensive project management services ensuring seamless execution 
-                            from initial planning through final delivery and handover.
+                            Rigorous resource planning, timelines auditing, safety supervision, and budgetary management 
+                            conducted by certified execution professionals.
                         </p>
-                        <ul class="service-features">
-                            <li>• Project Planning & Scheduling</li>
-                            <li>• Resource Management & Allocation</li>
-                            <li>• Risk Assessment & Mitigation</li>
-                            <li>• Quality Control & Assurance</li>
-                            <li>• Stakeholder Communication</li>
-                            <li>• Budget Management & Control</li>
+                        <ul class="service-features" aria-label="Project Management Features">
+                            <li>Strict Schedule Control</li>
+                            <li>Resource Optimization Schemes</li>
+                            <li>Risk Management & Mitigation</li>
+                            <li>Daily Progress Reports</li>
+                            <li>Contractual Standards Compliance</li>
                         </ul>
                         <div class="service-cta">
                             <a href="contact.html" class="btn-outline">Request Quote</a>
                         </div>
                     </div>
 
-                    <!-- Maintenance Services -->
+                    <!-- Service 4: Maintenance & Inspection -->
                     <div class="service-detail-card card-corporate animate-scaleIn">
                         <div class="service-header">
-                            <div class="service-icon">
+                            <div class="service-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
                                 </svg>
@@ -194,26 +239,25 @@
                             <h3>Maintenance & Inspection</h3>
                         </div>
                         <p class="service-summary">
-                            Proactive maintenance and inspection services to ensure optimal pipeline 
-                            performance, safety, and regulatory compliance throughout the asset lifecycle.
+                            Proactive diagnostic routines and Cathodic protection testing to ensure long-term pipeline safety 
+                            and minimize corrosion degradation over decades.
                         </p>
-                        <ul class="service-features">
-                            <li>• Preventive Maintenance Programs</li>
-                            <li>• Pipeline Integrity Assessment</li>
-                            <li>• Non-Destructive Testing (NDT)</li>
-                            <li>• Corrosion Monitoring & Protection</li>
-                            <li>• Emergency Repair Services</li>
-                            <li>• Asset Management Solutions</li>
+                        <ul class="service-features" aria-label="Maintenance Features">
+                            <li>Preventive Maintenance Audits</li>
+                            <li>Pipeline Structural Integrity Assessments</li>
+                            <li>Cathodic Protection Monitoring</li>
+                            <li>Emergency Response Joint Repair</li>
+                            <li>Non-Destructive Testing (NDT)</li>
                         </ul>
                         <div class="service-cta">
                             <a href="contact.html" class="btn-outline">Request Quote</a>
                         </div>
                     </div>
 
-                    <!-- Consulting -->
+                    <!-- Service 5: Engineering Consulting -->
                     <div class="service-detail-card card-corporate animate-scaleIn">
                         <div class="service-header">
-                            <div class="service-icon">
+                            <div class="service-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <circle cx="12" cy="8" r="7"/>
                                     <polyline points="8.21,13.89 7,23 12,20 17,23 15.79,13.88"/>
@@ -222,26 +266,25 @@
                             <h3>Engineering Consulting</h3>
                         </div>
                         <p class="service-summary">
-                            Expert engineering consulting services providing technical expertise, 
-                            feasibility studies, and strategic guidance for pipeline projects.
+                            Feasibility design studies, route optimization advisory, cost-benefit analyses, and 
+                            regulatory permitting consultation for government and private entities.
                         </p>
-                        <ul class="service-features">
-                            <li>• Feasibility Studies & Analysis</li>
-                            <li>• Technical Due Diligence</li>
-                            <li>• Regulatory Compliance Advisory</li>
-                            <li>• Technology Assessment & Selection</li>
-                            <li>• Expert Witness Services</li>
-                            <li>• Training & Knowledge Transfer</li>
+                        <ul class="service-features" aria-label="Consulting Features">
+                            <li>Feasibility Design Investigations</li>
+                            <li>Third-Party Project Review</li>
+                            <li>Statutory Approvals Strategy</li>
+                            <li>Material Quality Audits</li>
+                            <li>Expert Construction Valuation</li>
                         </ul>
                         <div class="service-cta">
                             <a href="contact.html" class="btn-outline">Request Quote</a>
                         </div>
                     </div>
 
-                    <!-- Quality Assurance -->
+                    <!-- Service 6: Quality Assurance -->
                     <div class="service-detail-card card-corporate animate-scaleIn">
                         <div class="service-header">
-                            <div class="service-icon">
+                            <div class="service-icon" aria-hidden="true">
                                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                     <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                                     <polyline points="22,4 12,14.01 9,11.01"/>
@@ -250,16 +293,15 @@
                             <h3>Quality Assurance</h3>
                         </div>
                         <p class="service-summary">
-                            Comprehensive quality assurance programs ensuring all work meets or exceeds 
-                            international standards and client specifications.
+                            Uncompromising weld inspection, pressure testing logs, standard coating analysis, and comprehensive 
+                            documentation reviews to ensure structural safety.
                         </p>
-                        <ul class="service-features">
-                            <li>• Quality Management Systems</li>
-                            <li>• Material Testing & Verification</li>
-                            <li>• Welding Inspection & Certification</li>
-                            <li>• Documentation & Record Keeping</li>
-                            <li>• Third-Party Audits & Reviews</li>
-                            <li>• Continuous Improvement Programs</li>
+                        <ul class="service-features" aria-label="Quality Assurance Features">
+                            <li>Radiographic Weld Testing</li>
+                            <li>Hydrostatic Strength Verification</li>
+                            <li>Coating Thickness Inspections</li>
+                            <li>Execution Quality Checklists</li>
+                            <li>ISO Safety Compliance Logs</li>
                         </ul>
                         <div class="service-cta">
                             <a href="contact.html" class="btn-outline">Request Quote</a>
@@ -269,121 +311,93 @@
             </div>
         </section>
 
-        <!-- Industries Served -->
-        <section class="industries-served">
+        <!-- Industries Served Section -->
+        <section class="industries-served" style="background-color: var(--neutral-50);">
             <div class="container">
                 <div class="section-header animate-fadeIn">
                     <h2 class="section-title">Industries We Serve</h2>
                     <p class="section-description">
-                        Delivering specialized pipeline solutions across diverse industry sectors
+                        Delivering specialized pipeline solutions across diverse industrial sectors
                     </p>
                 </div>
 
-                <div class="industries-grid">
-                    <div class="industry-card animate-scaleIn">
-                        <div class="industry-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <div class="industries-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: var(--space-5);">
+                    <!-- Oil & Gas -->
+                    <div class="industry-card card-corporate animate-scaleIn" style="text-align: center; background-color: var(--surface);">
+                        <div class="industry-icon" style="width: 48px; height: 48px; background-color: rgba(254, 206, 20, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3) auto;">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--neutral-900)" stroke-width="2">
                                 <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
                             </svg>
                         </div>
-                        <h3>Oil & Gas</h3>
-                        <p>Transmission pipelines, distribution networks, and processing facilities</p>
+                        <h4 style="margin-bottom: var(--space-2); font-weight: 700;">Oil & Gas</h4>
+                        <p style="font-size: 0.85rem; color: var(--neutral-500);">High-pressure steel transmission networks and city gas distribution utility lines.</p>
                     </div>
 
-                    <div class="industry-card animate-scaleIn">
-                        <div class="industry-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <!-- Water & Utilities -->
+                    <div class="industry-card card-corporate animate-scaleIn" style="text-align: center; background-color: var(--surface);">
+                        <div class="industry-icon" style="width: 48px; height: 48px; background-color: rgba(254, 206, 20, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3) auto;">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--neutral-900)" stroke-width="2">
                                 <path d="M20 6L9 17l-5-5"/>
                             </svg>
                         </div>
-                        <h3>Water & Utilities</h3>
-                        <p>Water supply systems, wastewater treatment, and municipal infrastructure</p>
+                        <h4 style="margin-bottom: var(--space-2); font-weight: 700;">Water & Utilities</h4>
+                        <p style="font-size: 0.85rem; color: var(--neutral-500);">Urban water mains, recycling systems, and wastewater management drainage infrastructure.</p>
                     </div>
 
-                    <div class="industry-card animate-scaleIn">
-                        <div class="industry-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <!-- Industrial Manufacturing -->
+                    <div class="industry-card card-corporate animate-scaleIn" style="text-align: center; background-color: var(--surface);">
+                        <div class="industry-icon" style="width: 48px; height: 48px; background-color: rgba(254, 206, 20, 0.1); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto var(--space-3) auto;">
+                            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--neutral-900)" stroke-width="2">
                                 <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
                                 <line x1="8" y1="21" x2="16" y2="21"/>
                                 <line x1="12" y1="17" x2="12" y2="21"/>
                             </svg>
                         </div>
-                        <h3>Industrial</h3>
-                        <p>Chemical processing, manufacturing, and industrial facility pipelines</p>
+                        <h4 style="margin-bottom: var(--space-2); font-weight: 700;">Industrial Plants</h4>
+                        <p style="font-size: 0.85rem; color: var(--neutral-500);">Chemical piping grids, cooling towers loop lines, and process plant layouts.</p>
                     </div>
-
-                    <!-- <div class="industry-card animate-scaleIn">
-                        <div class="industry-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
-                            </svg>
-                        </div>
-                        <h3>Power Generation</h3>
-                        <p>Cooling systems, fuel supply lines, and power plant infrastructure</p>
-                    </div> -->
                 </div>
             </div>
         </section>
 
-        <!-- Process -->
-        <section class="our-process">
+        <!-- FAQ Accordion Section (New Feature) -->
+        <section class="faq-section">
             <div class="container">
                 <div class="section-header animate-fadeIn">
-                    <h2 class="section-title">Our Process</h2>
+                    <h2 class="section-title">Frequently Asked Questions</h2>
                     <p class="section-description">
-                        A systematic approach ensuring project success from concept to completion
+                        Get answers to common technical queries about our pipeline solutions and compliance standards
                     </p>
                 </div>
 
-                <div class="process-steps">
-                    <div class="process-step animate-slideUp">
-                        <div class="step-number">01</div>
-                        <div class="step-content">
-                            <h3>Consultation & Planning</h3>
-                            <p>Initial assessment, requirements gathering, and detailed project planning</p>
+                <div class="faq-container animate-slideUp">
+                    <details class="faq-item">
+                        <summary>What safety standards do you follow for gas pipeline construction?</summary>
+                        <div class="faq-content">
+                            <p>We execute all pipeline laying projects in strict accordance with the **ASME B31.8** standard for Gas Transmission and Distribution Piping Systems, as well as the safety regulations established by the **Petroleum and Natural Gas Regulatory Board (PNGRB)** of India. All welding operators are certified under **API 1104** regulations.</p>
                         </div>
-                    </div>
+                    </details>
 
-                    <div class="process-step animate-slideUp">
-                        <div class="step-number">02</div>
-                        <div class="step-content">
-                            <h3>Design & Engineering</h3>
-                            <p>Detailed engineering design, analysis, and technical documentation</p>
+                    <details class="faq-item">
+                        <summary>Do you handle regulatory approvals and environmental clearances?</summary>
+                        <div class="faq-content">
+                            <p>Yes. As a part of our turnkey execution services, we draft route plans and compile engineering designs for local authorities (NHAI, Forest Department, municipal bodies) to secure necessary Right of Use (RoU) clearances and statutory permissions.</p>
                         </div>
-                    </div>
+                    </details>
 
-                    <div class="process-step animate-slideUp">
-                        <div class="step-number">03</div>
-                        <div class="step-content">
-                            <h3>Construction & Installation</h3>
-                            <p>Professional installation following strict quality and safety standards</p>
+                    <details class="faq-item">
+                        <summary>What materials do you specialize in for industrial pipeline laying?</summary>
+                        <div class="faq-content">
+                            <p>We specialize in laying high-strength Carbon Steel pipelines (API 5L grade) for high-pressure gas distribution, Stainless Steel for chemical processes, and High-Density Polyethylene (HDPE) lines for utility water networks and low-pressure gas distribution systems.</p>
                         </div>
-                    </div>
+                    </details>
 
-                    <div class="process-step animate-slideUp">
-                        <div class="step-number">04</div>
-                        <div class="step-content">
-                            <h3>Testing & Commissioning</h3>
-                            <p>Comprehensive testing, system commissioning, and final handover</p>
+                    <details class="faq-item">
+                        <summary>How do you perform quality and weld integrity testing?</summary>
+                        <div class="faq-content">
+                            <p>We perform 100% Non-Destructive Testing (NDT), including radiographic weld examination, ultrasonic inspection, and hydrostatic pressure testing at 1.5 times the design pressure limit. This guarantees leak-free pipeline configurations prior to final gas-in or commissioning.</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- CTA Section -->
-        <section class="services-cta">
-            <div class="container">
-                <div class="cta-content animate-fadeIn">
-                    <h2>Ready to Start Your Project?</h2>
-                    <p>
-                        Contact our engineering experts today for a comprehensive consultation 
-                        and customized solution for your pipeline project.
-                    </p>
-                    <div class="cta-buttons">
-                        <a href="contact.html" class="btn-hero">Get Free Consultation</a>
-                        <a href="projects.html" class="btn-hero-outline">View Our Work</a>
-                    </div>
+                    </details>
                 </div>
             </div>
         </section>
@@ -393,7 +407,6 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <!-- Company Info -->
                 <div class="footer-section">
                     <div class="footer-logo">
                         <div class="footer-logo-icon">
@@ -407,80 +420,64 @@
                         since 2019.
                     </p>
                     <div class="social-links">
-                        <a href="#" class="social-link">
+                        <a href="#" class="social-link" aria-label="LinkedIn Profile">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
                                 <rect x="2" y="9" width="4" height="12"/>
                                 <circle cx="4" cy="4" r="2"/>
                             </svg>
                         </a>
-                        <a href="#" class="social-link">
+                        <a href="#" class="social-link" aria-label="Twitter Profile">
                             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                                 <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
-                            </svg>
-                        </a>
-                        <a href="#" class="social-link">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
                             </svg>
                         </a>
                     </div>
                 </div>
 
-                <!-- Quick Links -->
                 <div class="footer-section">
-                    <h4 class="footer-section-title">Quick Links</h4>
+                    <h4>Quick Links</h4>
                     <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="projects.html">Projects Portfolio</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
 
-                <!-- Services -->
                 <div class="footer-section">
-                    <h4 class="footer-section-title">Our Services</h4>
+                    <h4>Our Services</h4>
                     <ul class="footer-links">
                         <li>Pipeline Design & Engineering</li>
-                        <li>Oil & Gas Infrastructure</li>
-                        <li>Industrial Construction</li>
+                        <li>Construction Management</li>
                         <li>Project Management</li>
                         <li>Quality Assurance</li>
                     </ul>
                 </div>
 
-                <!-- Contact Info -->
                 <div class="footer-section">
-                    <h4 class="footer-section-title">Contact Information</h4>
+                    <h4>Contact Info</h4>
                     <div class="contact-info">
                         <div class="contact-item">
-                            <svg class="location-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                                 <circle cx="12" cy="10" r="3"/>
                             </svg>
                             <span>51 Vidhata Town Barari Refinery<br>Mathura, UP, India - 281005</span>
                         </div>
                         <div class="contact-item">
-                            <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                             </svg>
-                            <span>+91 9568483922</span>
-                        </div>
-                        <div class="contact-item">
-                            <svg class="mail-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
-                                <polyline points="22,6 12,13 2,6"/>
-                            </svg>
-                            <span>info@shivamengineering.in</span>
+                            <span class="text-mono">+91 9568483922</span>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Shivam Engineering. All rights reserved. | Pipeline Solutions & Infrastructure Development</p>
+                <p>&copy; 2026 Shivam Engineering. All rights reserved.</p>
             </div>
         </div>
     </footer>

@@ -1,285 +1,247 @@
-/* Projects Page Specific Styles */
+/* Projects Page Specific Styles - Shivam Engineering */
 
 .projects-hero {
-    padding: 8rem 0 5rem;
-    background: linear-gradient(135deg, hsla(217, 91%, 60%, 0.05), hsla(215, 16%, 47%, 0.05));
+  padding: var(--space-8) 0 var(--space-6) 0;
+  background: linear-gradient(135deg, rgba(254, 206, 20, 0.05) 0%, rgba(0, 0, 0, 0.02) 100%);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
 }
 
 .projects-hero-content {
-    text-align: center;
-    max-width: 48rem;
-    margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .projects-hero h1 {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 1.5rem;
+  font-size: clamp(2.5rem, 5vw, 3.5rem);
+  font-weight: 800;
+  margin-bottom: var(--space-3);
+  color: var(--secondary);
 }
 
 .projects-hero p {
-    font-size: 1.25rem;
-    color: var(--muted-foreground);
-    line-height: 1.6;
+  font-size: 1.15rem;
+  color: var(--neutral-500);
+  line-height: 1.6;
 }
 
-/* Project Stats */
+/* Statistics Counter Section override */
 .project-stats {
-    padding: 3rem 0;
-    background: var(--muted);
+  border-top: 1px solid var(--border);
 }
 
-/* Featured Projects */
+/* Project Filter Tabs */
+.project-filters {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.filter-btn {
+  background-color: var(--neutral-100);
+  border: 1px solid var(--border);
+  color: var(--neutral-700);
+  padding: 0.5rem 1.25rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  outline: none;
+}
+
+.filter-btn:hover {
+  background-color: var(--neutral-200);
+  color: var(--secondary);
+}
+
+.filter-btn.active {
+  background-color: var(--secondary);
+  color: #ffffff;
+  border-color: var(--secondary);
+  box-shadow: var(--shadow-md);
+}
+
+/* Projects Portfolio Grid */
 .featured-projects {
-    padding: 5rem 0;
+  padding: var(--space-7) 0;
 }
 
 .projects-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-6);
 }
 
 .project-card {
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-    transition: var(--transition-smooth);
-}
-
-.project-card:hover {
-    transform: translateY(-4px);
-    box-shadow: var(--shadow-elegant);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--surface);
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
 }
 
 .project-image {
-    aspect-ratio: 16/9;
-    overflow: hidden;
-    border-radius: 0.75rem 0.75rem 0 0;
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background-color: var(--neutral-950);
 }
 
-.project-image-placeholder {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.blueprint-svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+  transition: transform var(--transition-slow);
 }
 
-.project-image-placeholder svg {
-    width: 4rem;
-    height: 4rem;
-    color: white;
+.project-card:hover .blueprint-svg {
+  transform: scale(1.03);
 }
 
+/* Status Badges */
+.status-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: var(--shadow-sm);
+}
+
+.status-completed {
+  background-color: var(--success);
+  color: #ffffff;
+}
+
+.status-ongoing {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+/* Card Content Details */
 .project-content {
-    padding: 2rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
 .project-meta {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 1rem;
+  margin-bottom: var(--space-2);
 }
 
 .project-category {
-    background: hsla(217, 91%, 60%, 0.1);
-    color: var(--primary);
-    padding: 0.25rem 0.75rem;
-    border-radius: 1rem;
-    font-size: 0.75rem;
-    font-weight: 600;
-}
-
-.project-year {
-    color: var(--muted-foreground);
-    font-size: 0.875rem;
-    font-weight: 500;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #cda304; /* Readable gold */
 }
 
 .project-card h3 {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    line-height: 1.3;
+  font-size: 1.35rem;
+  font-weight: 800;
+  margin-bottom: var(--space-3);
+  color: var(--secondary);
 }
 
 .project-description {
-    color: var(--muted-foreground);
-    margin-bottom: 1.5rem;
-    line-height: 1.6;
-    flex: 1;
+  font-size: 0.9rem;
+  color: var(--neutral-600);
+  margin-bottom: var(--space-4);
+  line-height: 1.6;
 }
 
 .project-features {
-    list-style: none;
-    margin-bottom: 1.5rem;
+  list-style: none;
+  margin-bottom: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
 }
 
 .project-features li {
-    padding: 0.25rem 0;
-    color: var(--foreground);
-    font-size: 0.875rem;
+  font-size: 0.85rem;
+  color: var(--neutral-500);
+  position: relative;
+  padding-left: var(--space-4);
 }
 
+.project-features li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--primary);
+}
+
+/* Bottom Stats inside Card */
 .project-stats-mini {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-    padding-top: 1rem;
-    border-top: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--border);
+  padding-top: var(--space-4);
+  margin-top: auto;
 }
 
 .mini-stat {
-    text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .mini-stat-number {
-    display: block;
-    font-size: 1.25rem;
-    font-weight: 700;
-    color: var(--primary);
-    margin-bottom: 0.25rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--secondary);
 }
 
 .mini-stat-label {
-    font-size: 0.75rem;
-    color: var(--muted-foreground);
+  font-size: 0.75rem;
+  color: var(--neutral-400);
+  text-transform: uppercase;
 }
 
-/* Project Capabilities */
+/* Technical Capabilities list */
 .project-capabilities {
-    padding: 5rem 0;
-    background: var(--muted);
-}
-
-.capabilities-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
+  border-top: 1px solid var(--border);
 }
 
 .capability-card {
-    background: var(--card);
-    padding: 2rem;
-    border-radius: 0.75rem;
-    text-align: center;
-    box-shadow: var(--shadow-card);
-    transition: var(--transition-smooth);
+  padding: var(--space-5);
+  background-color: var(--surface);
 }
 
-.capability-card:hover {
-    transform: translateY(-2px);
-    box-shadow: var(--shadow-corporate);
+.capability-card h4 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: var(--space-2);
 }
 
-.capability-icon {
-    width: 3rem;
-    height: 3rem;
-    background: hsla(217, 91%, 60%, 0.1);
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto 1rem;
+/* Dynamic Hidden Class */
+.project-card.hidden {
+  display: none !important;
 }
 
-.capability-icon svg {
-    width: 1.5rem;
-    height: 1.5rem;
-    color: var(--primary);
-}
-
-.capability-card h3 {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-}
-
-.capability-card p {
-    color: var(--muted-foreground);
-    line-height: 1.5;
-}
-
-/* CTA Section */
-.projects-cta {
-    padding: 5rem 0;
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
-}
-
-.cta-content {
-    text-align: center;
-    color: white;
-    max-width: 48rem;
-    margin: 0 auto;
-}
-
-.cta-content h2 {
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-}
-
-.cta-content p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-    line-height: 1.6;
-}
-
-.cta-buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.btn-hero-outline {
-    background: transparent;
-    color: white;
-    border: 2px solid white;
-}
-
-.btn-hero-outline:hover {
-    background: white;
-    color: var(--primary);
-}
-
-/* Responsive Design */
-@media (min-width: 640px) {
-    .cta-buttons {
-        flex-direction: row;
-    }
-}
-
+/* --- Responsive Media Queries --- */
 @media (min-width: 768px) {
-    .projects-hero h1 {
-        font-size: 3.5rem;
-    }
-    
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .capabilities-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .projects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 1024px) {
-    .projects-hero h1 {
-        font-size: 4rem;
-    }
-    
-    .projects-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    
-    .capabilities-grid {
-        grid-template-columns: repeat(4, 1fr);
-    }
+  .projects-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
