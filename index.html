@@ -4,19 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shivam Engineering - Pipeline Solutions & Infrastructure</title>
-    <meta name="description" content="Leading pipeline engineering company specializing in infrastructure development, oil & gas pipelines, and industrial solutions. Expert engineering services since 2010.">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <meta name="description" content="Leading pipeline engineering company specializing in infrastructure development, oil & gas pipelines, and industrial solutions. Expert engineering services since 2019.">
+    <!-- Google Fonts: Poppins (Sans-serif) & IBM Plex Mono (Monospace for numbers/stats) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/variables.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="icon" href="/favicon.ico">
 </head>
 <body>
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link" style="position: absolute; top: -100px; left: 0; background: var(--primary); color: var(--secondary); padding: 10px; z-index: 9999; font-weight: 700; transition: top 0.2s;" onfocus="this.style.top='0'" onblur="this.style.top='-100px'">Skip to main content</a>
+
     <!-- Navigation -->
-    <nav class="navigation">
+    <nav class="navigation" aria-label="Main Navigation">
         <div class="container">
             <div class="nav-content">
                 <!-- Logo -->
-                <a href="index.html" class="logo">
-                    <div class="logo-icon">
+                <a href="index.html" class="logo" aria-label="Shivam Engineering Home">
+                    <div class="logo-icon" aria-hidden="true">
                         <span>SE</span>
                     </div>
                     <div class="logo-text">
@@ -25,28 +33,28 @@
                     </div>
                 </a>
 
-                <!-- Desktop Navigation -->
+                <!-- Desktop Navigation Links -->
                 <div class="nav-links">
-                    <a href="index.html" class="nav-link active">Home</a>
+                    <a href="index.html" class="nav-link active" aria-current="page">Home</a>
                     <a href="about.html" class="nav-link">About</a>
                     <a href="services.html" class="nav-link">Services</a>
                     <a href="projects.html" class="nav-link">Projects</a>
                     <a href="contact.html" class="nav-link">Contact</a>
                 </div>
 
-                <!-- Contact Info -->
-                <div class="nav-contact">
-                    <div class="phone-info">
-                        <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <!-- Contact Info & CTA -->
+                <div class="nav-contact-wrapper">
+                    <a href="tel:+919568483922" class="phone-info" aria-label="Call us at +91 95684 83922">
+                        <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                         </svg>
                         <span>+91 9568483922</span>
-                    </div>
+                    </a>
                     <a href="contact.html" class="btn-outline">Get Quote</a>
                 </div>
 
                 <!-- Mobile Menu Button -->
-                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-expanded="false" aria-controls="mobileMenu" aria-label="Toggle Mobile Menu">
                     <svg class="menu-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <line x1="3" y1="6" x2="21" y2="6"/>
                         <line x1="3" y1="12" x2="21" y2="12"/>
@@ -59,46 +67,45 @@
                 </button>
             </div>
 
-            <!-- Mobile Menu -->
-            <div class="mobile-menu hidden" id="mobileMenu">
+            <!-- Mobile Dropdown Menu -->
+            <div class="mobile-menu hidden" id="mobileMenu" role="region" aria-label="Mobile Navigation Drawer">
                 <div class="mobile-menu-content">
                     <a href="index.html" class="mobile-nav-link active">Home</a>
                     <a href="about.html" class="mobile-nav-link">About</a>
                     <a href="services.html" class="mobile-nav-link">Services</a>
                     <a href="projects.html" class="mobile-nav-link">Projects</a>
                     <a href="contact.html" class="mobile-nav-link">Contact</a>
-                    <div class="mobile-phone-info">
-                        <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <a href="tel:+919568483922" class="mobile-phone-info">
+                        <svg class="phone-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                             <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                         </svg>
                         <span>+91 9568483922</span>
-                    </div>
+                    </a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <main>
+    <!-- Main Content -->
+    <main id="main-content">
         <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-background">
-                <div class="hero-overlay"></div>
-            </div>
+        <section class="hero" style="position: relative; height: 90vh; min-height: 550px; display: flex; align-items: center; justify-content: center; overflow: hidden; background-color: var(--secondary);">
+            <!-- Background Image overlay -->
+            <div class="hero-background" style="position: absolute; inset: 0; background-image: url('assets/hero-pipeline.jpg'); background-size: cover; background-position: center; filter: brightness(0.35);"></div>
             
-            <div class="container">
-                <div class="hero-content animate-fadeIn">
-                    <h1 class="hero-title">
-                        Engineering the
-                        <span class="hero-accent">Future of Pipelines</span>
+            <div class="container" style="position: relative; z-index: 1;">
+                <div class="hero-content animate-fadeIn" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                    <h1 class="hero-title" style="color: #ffffff; margin-bottom: var(--space-4); font-weight: 900; text-shadow: 0 4px 10px rgba(0,0,0,0.5);">
+                        Engineering the <span style="color: var(--primary);">Future of Pipelines</span>
                     </h1>
-                    <p class="hero-description">
+                    <p class="hero-description" style="color: var(--neutral-200); font-size: clamp(1rem, 3.5vw, 1.25rem); margin-bottom: var(--space-6); line-height: 1.7;">
                         Shivam Engineering delivers world-class pipeline solutions with cutting-edge 
-                        technology and unmatched expertise in infrastructure development.
+                        technology and unmatched expertise in industrial infrastructure development.
                     </p>
-                    <div class="hero-buttons animate-slideUp">
+                    <div class="hero-buttons animate-slideUp" style="display: flex; gap: var(--space-4); justify-content: center; flex-wrap: wrap;">
                         <a href="services.html" class="btn-hero">
                             Our Services 
-                            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                                 <line x1="5" y1="12" x2="19" y2="12"/>
                                 <polyline points="12,5 19,12 12,19"/>
                             </svg>
@@ -134,7 +141,7 @@
         </section>
 
         <!-- Services Overview -->
-        <section class="services-overview">
+        <section class="services-overview" style="background-color: var(--neutral-50);">
             <div class="container">
                 <div class="section-header animate-fadeIn">
                     <h2 class="section-title">Our Core Services</h2>
@@ -143,48 +150,51 @@
                     </p>
                 </div>
 
-                <div class="services-grid">
+                <div class="services-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-5);">
+                    <!-- Service Card 1 -->
                     <div class="service-card card-corporate">
-                        <div class="service-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <div class="service-icon" style="width: 56px; height: 56px; background-color: rgba(254,206,20,0.1); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-4);">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--neutral-900)" stroke-width="2" aria-hidden="true">
                                 <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/>
                             </svg>
                         </div>
-                        <h3 class="service-title">Pipeline Design</h3>
-                        <p class="service-description">
+                        <h3 style="margin-bottom: var(--space-3); font-weight: 800;">Pipeline Design</h3>
+                        <p style="margin-bottom: var(--space-4); font-size: 0.95rem; color: var(--neutral-600);">
                             Advanced pipeline design and engineering solutions for oil, gas, and industrial applications.
                         </p>
-                        <a href="services.html" class="btn-outline">Learn More</a>
+                        <a href="services.html" class="btn-outline" style="padding: 0.5rem 1.2rem; font-size: 0.8rem;">Learn More</a>
                     </div>
 
+                    <!-- Service Card 2 -->
                     <div class="service-card card-corporate">
-                        <div class="service-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <div class="service-icon" style="width: 56px; height: 56px; background-color: rgba(254,206,20,0.1); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-4);">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--neutral-900)" stroke-width="2" aria-hidden="true">
                                 <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
                                 <circle cx="9" cy="7" r="4"/>
                                 <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
                                 <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
                             </svg>
                         </div>
-                        <h3 class="service-title">Project Management</h3>
-                        <p class="service-description">
-                            End-to-end project management ensuring timely delivery and quality execution.
+                        <h3 style="margin-bottom: var(--space-3); font-weight: 800;">Project Management</h3>
+                        <p style="margin-bottom: var(--space-4); font-size: 0.95rem; color: var(--neutral-600);">
+                            End-to-end project management ensuring safety compliance, timely delivery, and quality execution.
                         </p>
-                        <a href="services.html" class="btn-outline">Learn More</a>
+                        <a href="services.html" class="btn-outline" style="padding: 0.5rem 1.2rem; font-size: 0.8rem;">Learn More</a>
                     </div>
 
+                    <!-- Service Card 3 -->
                     <div class="service-card card-corporate">
-                        <div class="service-icon">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <div class="service-icon" style="width: 56px; height: 56px; background-color: rgba(254,206,20,0.1); border-radius: var(--radius-md); display: flex; align-items: center; justify-content: center; margin-bottom: var(--space-4);">
+                            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="var(--neutral-900)" stroke-width="2" aria-hidden="true">
                                 <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
                                 <polyline points="22,4 12,14.01 9,11.01"/>
                             </svg>
                         </div>
-                        <h3 class="service-title">Quality Assurance</h3>
-                        <p class="service-description">
-                            Rigorous quality control and compliance with international engineering standards.
+                        <h3 style="margin-bottom: var(--space-3); font-weight: 800;">Quality Assurance</h3>
+                        <p style="margin-bottom: var(--space-4); font-size: 0.95rem; color: var(--neutral-600);">
+                            Rigorous quality control and compliance audits in accordance with international engineering standards.
                         </p>
-                        <a href="services.html" class="btn-outline">Learn More</a>
+                        <a href="services.html" class="btn-outline" style="padding: 0.5rem 1.2rem; font-size: 0.8rem;">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -193,68 +203,76 @@
         <!-- Why Choose Us -->
         <section class="why-choose-us">
             <div class="container">
-                <div class="why-choose-grid">
+                <div class="why-choose-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: var(--space-6); align-items: center;">
                     <div class="animate-slideUp">
-                        <h2 class="why-choose-title">
-                            Why Choose <span class="text-primary">Shivam Engineering?</span>
+                        <h2 class="why-choose-title" style="margin-bottom: var(--space-4); font-weight: 900;">
+                            Why Choose <span style="color: var(--primary-hover); text-decoration: underline; decoration-color: var(--primary);">Shivam Engineering?</span>
                         </h2>
-                        <div class="features-list">
-                            <div class="feature-item">
-                                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                    <polyline points="22,4 12,14.01 9,11.01"/>
-                                </svg>
+                        
+                        <div class="features-list" style="display: flex; flex-direction: column; gap: var(--space-4); margin-bottom: var(--space-5);">
+                            <!-- Feature 1 -->
+                            <div class="feature-item" style="display: flex; gap: var(--space-3); align-items: flex-start;">
+                                <div style="width: 24px; height: 24px; border-radius: 50%; background-color: var(--primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 3px;">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--secondary)" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
                                 <div>
-                                    <h3 class="feature-title">5+ Years of Excellence</h3>
-                                    <p class="feature-description">Proven track record in delivering complex pipeline projects across various industries.</p>
+                                    <h4 style="font-size: 1.1rem; margin-bottom: var(--space-1); font-weight: 700;">5+ Years of Excellence</h4>
+                                    <p style="font-size: 0.9rem; color: var(--neutral-500);">Proven track record in delivering complex pipeline projects across various Indian states.</p>
                                 </div>
                             </div>
-                            <div class="feature-item">
-                                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                    <polyline points="22,4 12,14.01 9,11.01"/>
-                                </svg>
+                            
+                            <!-- Feature 2 -->
+                            <div class="feature-item" style="display: flex; gap: var(--space-3); align-items: flex-start;">
+                                <div style="width: 24px; height: 24px; border-radius: 50%; background-color: var(--primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 3px;">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--secondary)" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
                                 <div>
-                                    <h3 class="feature-title">Expert Engineering Team</h3>
-                                    <p class="feature-description">Highly qualified engineers with specialized expertise in pipeline design and construction.</p>
+                                    <h4 style="font-size: 1.1rem; margin-bottom: var(--space-1); font-weight: 700;">Expert Engineering Team</h4>
+                                    <p style="font-size: 0.9rem; color: var(--neutral-500);">Highly qualified civil and structural engineers with specialized expertise in pipeline design.</p>
                                 </div>
                             </div>
-                            <div class="feature-item">
-                                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                    <polyline points="22,4 12,14.01 9,11.01"/>
-                                </svg>
+
+                            <!-- Feature 3 -->
+                            <div class="feature-item" style="display: flex; gap: var(--space-3); align-items: flex-start;">
+                                <div style="width: 24px; height: 24px; border-radius: 50%; background-color: var(--primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 3px;">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--secondary)" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
                                 <div>
-                                    <h3 class="feature-title">Advanced Technology</h3>
-                                    <p class="feature-description">Cutting-edge tools and technologies for precision engineering and project execution.</p>
+                                    <h4 style="font-size: 1.1rem; margin-bottom: var(--space-1); font-weight: 700;">Advanced Technology</h4>
+                                    <p style="font-size: 0.9rem; color: var(--neutral-500);">Cutting-edge 3D modeling and hydraulic simulation software for precision engineering.</p>
                                 </div>
                             </div>
-                            <div class="feature-item">
-                                <svg class="feature-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
-                                    <polyline points="22,4 12,14.01 9,11.01"/>
-                                </svg>
+
+                            <!-- Feature 4 -->
+                            <div class="feature-item" style="display: flex; gap: var(--space-3); align-items: flex-start;">
+                                <div style="width: 24px; height: 24px; border-radius: 50%; background-color: var(--primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0; margin-top: 3px;">
+                                    <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="var(--secondary)" stroke-width="3" aria-hidden="true"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                                </div>
                                 <div>
-                                    <h3 class="feature-title">Safety First Approach</h3>
-                                    <p class="feature-description">Uncompromising commitment to safety standards and environmental protection.</p>
+                                    <h4 style="font-size: 1.1rem; margin-bottom: var(--space-1); font-weight: 700;">Safety First Approach</h4>
+                                    <p style="font-size: 0.9rem; color: var(--neutral-500);">Zero-accident policy and complete adherence to national and international safety regulations.</p>
                                 </div>
                             </div>
                         </div>
+
                         <a href="about.html" class="btn-hero">
                             Learn More About Us 
-                            <svg class="arrow-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
                                 <line x1="5" y1="12" x2="19" y2="12"/>
                                 <polyline points="12,5 19,12 12,19"/>
                             </svg>
                         </a>
                     </div>
+
+                    <!-- Call To Action Panel -->
                     <div class="animate-scaleIn">
-                        <div class="cta-card">
-                            <h3 class="cta-title">Get Started Today</h3>
-                            <p class="cta-description">
-                                Ready to discuss your pipeline project? Contact our expert team for a comprehensive consultation and customized solution.
+                        <div class="cta-card card-corporate" style="background-color: var(--neutral-950); color: #ffffff; border: 2px solid var(--primary); display: flex; flex-direction: column; gap: var(--space-4); position: relative; overflow: hidden; padding: var(--space-6);">
+                            <div style="position: absolute; top: -50px; right: -50px; width: 150px; height: 150px; border-radius: 50%; background-color: var(--primary); opacity: 0.05; pointer-events: none;"></div>
+                            <h3 style="color: #ffffff; font-weight: 800; font-size: 1.8rem; line-height: 1.2;">Get Started Today</h3>
+                            <p style="color: var(--neutral-400); font-size: 0.95rem; line-height: 1.7;">
+                                Ready to discuss your pipeline project? Contact our expert team for a comprehensive consultation, cost estimation, and customized engineering solutions.
                             </p>
-                            <a href="contact.html" class="btn-hero-outline">Contact Us Now</a>
+                            <a href="contact.html" class="btn-hero" style="align-self: flex-start; margin-top: var(--space-2);">Contact Us Now</a>
                         </div>
                     </div>
                 </div>
@@ -280,20 +298,20 @@
                         since 2019.
                     </p>
                     <div class="social-links">
-                        <a href="#" class="social-link">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <a href="#" class="social-link" aria-label="LinkedIn Profile">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
                                 <rect x="2" y="9" width="4" height="12"/>
                                 <circle cx="4" cy="4" r="2"/>
                             </svg>
                         </a>
-                        <a href="#" class="social-link">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <a href="#" class="social-link" aria-label="Twitter Profile">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/>
                             </svg>
                         </a>
-                        <a href="#" class="social-link">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <a href="#" class="social-link" aria-label="Facebook Page">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
                             </svg>
                         </a>
@@ -307,16 +325,16 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="services.html">Services</a></li>
-                        <li><a href="projects.html">Projects</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="projects.html">Projects Portfolio</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
                     </ul>
                 </div>
 
-                <!-- Services -->
+                <!-- Services Links -->
                 <div class="footer-section">
                     <h4>Our Services</h4>
                     <ul class="footer-links">
-                        <li><a href="services.html">Pipeline Design</a></li>
+                        <li><a href="services.html">Pipeline Design & Engineering</a></li>
                         <li><a href="services.html">Construction Management</a></li>
                         <li><a href="services.html">Project Management</a></li>
                         <li><a href="services.html">Quality Assurance</a></li>
@@ -329,20 +347,20 @@
                     <h4>Contact Info</h4>
                     <div class="contact-info">
                         <div class="contact-item">
-                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
                                 <circle cx="12" cy="10" r="3"/>
                             </svg>
                             <span>51 Vidhata Town Barari Refinery<br>Mathura, UP, India - 281005</span>
                         </div>
                         <div class="contact-item">
-                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
                             </svg>
-                            <span>+91 9568483922</span>
+                            <span class="text-mono">+91 9568483922</span>
                         </div>
                         <div class="contact-item">
-                            <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
                                 <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
                                 <polyline points="22,6 12,13 2,6"/>
                             </svg>
@@ -353,7 +371,7 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2024 Shivam Engineering. All rights reserved.</p>
+                <p>&copy; 2026 Shivam Engineering. All rights reserved. | Pipeline Solutions & Infrastructure Development</p>
                 <div class="footer-bottom-links">
                     <a href="#">Privacy Policy</a>
                     <a href="#">Terms of Service</a>
